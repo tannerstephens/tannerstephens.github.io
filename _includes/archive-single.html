@@ -14,7 +14,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       {% if post.link %}
-        <a href="{{ post.link }}">
+        <a href="{{ post.link }}" target="_blank">
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">
       {% endif %}
@@ -25,7 +25,7 @@
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a>
+        <a href="{{ post.link }}" target="_blank">{{ title }}</a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
