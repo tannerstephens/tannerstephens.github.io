@@ -10,7 +10,7 @@
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
         {% if f.url %}
-          <a href="{{ f.url | relative_url }}" >
+          <a href="{{ f.url | relative_url }}" target="_blank" >
         {% endif %}
         {% if f.image_path %}
           <div class="archive__item-teaser">
